@@ -1,0 +1,12 @@
+{
+  "name": "globalchainx-supply-chain-dashboard",
+  "version": "1.0.0",
+  "description": "GlobalChainX supply chain operations dashboard",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
