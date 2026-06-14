@@ -1,10 +1,13 @@
 node_modules/
 .DS_Store
+.ipynb_checkpoints/
+ss/
 
 # Terraform
 .terraform/
 *.tfstate
 *.tfstate.*
+.terraform.lock.hcl
 crash.log
 override.tf
 override.tf.json
