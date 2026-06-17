@@ -2,7 +2,9 @@ pipeline {
     agent any
 
     environment {
-        // DockerHub image name — change if your DockerHub repo name differs
+        // Fix for "command not found" — Jenkins on macOS doesn't inherit your shell's PATH
+        PATH = "/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+
         IMAGE_NAME = "swataj/globalchainx-app"
         IMAGE_TAG  = "${env.BUILD_NUMBER}"
     }
@@ -11,7 +13,6 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                // Pulls the latest code from the repo configured in this Jenkins job
                 checkout scm
             }
         }
