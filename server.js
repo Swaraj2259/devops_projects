@@ -93,7 +93,7 @@ function getBarClass(value) {
 
 app.get('/metrics', (req, res) => {
   res.type('text/plain').send([
-    'globalchainx_active_shipments 1284',
+    'globalchainx_active_shipments 1500',
     'globalchainx_warehouses_online 47',
     'globalchainx_orders_today 98432',
     'globalchainx_alerts_critical 3',
